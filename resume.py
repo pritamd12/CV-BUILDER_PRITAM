@@ -1,6 +1,6 @@
 import streamlit as st
 from google import genai
-from config import API_KEY
+API_KEY = st.secrets["API_KEY"]
 
 from docx import Document
 from reportlab.platypus import SimpleDocTemplate, Paragraph
